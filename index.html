@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Crystals Collector Game</title>
+	 	<link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
+	    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7' crossorigin='anonymous'>
+	    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>   
+	    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+
+	</head>
+
+	<body><!--copied some ideas and code from hangman solution -->
+		<div class='container'>
+
+			<div class = 'jumbotron'>
+				<div class = 'container'>
+					<h2>Crystals Collector</h2>
+					<div class = 'list'>
+						<ul class = 'list-group list-group-flush'>
+							<li class = 'list-group-item'>1. You will be given a random number at the start of the game</li>
+							<li class = 'list-group-item'>2. There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score</li>
+							<li class = 'list-group-item'>3. You win the game by matching 'Your Score' to 'Your Target' score. You lose the game if your score goes above the target score.
+							</li>
+							<li class='list-group-item'>4. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the values of each crystal changes</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class = 'row'>
+				<div class = 'col-lg-3'>
+					<div class = 'panel panel default'>
+						<div class = 'panel-heading'>
+							<h3 class='panel-title'><strong>Number to Match</strong></h3>
+						</div>
+						<div class = 'panel-body'>
+							<div id = 'NumberToMatch'>
+								<h3></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-lg-3'>
+					<div class = 'panel panel default'>
+						<div class = 'panel-heading'>
+							<h3 class='panel-title'><strong>Game Status</strong></h3>
+						</div>
+						<div class = 'panel-body'>
+							<div><strong>Wins: </strong> <span id='wins'></span></div>
+							<div><strong>Losses: </strong> <span id='losses'></span></div>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-lg-3'>
+					<div class = 'panel panel default'>
+						<div class = 'panel-heading'>
+							<h3 class='panel-title'><strong>Your Score</strong></h3>
+						</div>
+						<div class = 'panel-body'>
+							<div id = 'YourScore'>
+								<h3></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = 'col-lg-3'>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-2'>
+					<button type='button' name='button' id='cryone'>
+						<img src='assets/images/1.png'>
+					</button>
+				</div>
+				<div class='col-md-2'>
+				 	<button type='button' name='button' id='crytwo'>
+						<img src='assets/images/2.png'>
+					</button>
+				</div>
+				<div class='col-md-2'>
+					<button type='button' name='button' id='crythree'>
+						<img src='assets/images/3.png'>
+					</button>
+				</div>
+				<div class='col-md-2'>
+					<button type='button' name='button' id='cryfour'>
+						<img src='assets/images/4.png'>
+					</button>
+				</div>
+				<div class = 'col-md-4'>
+				</div>
+			</div>
+		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+		<script type='text/javascript' src='assets/javascript/game.js'></script>
+	
+	</body>
+</html>
